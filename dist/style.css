@@ -1,0 +1,122 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ----------------- CSS RESET ENDS ----------------------- */
+
+div, nav {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.75;
+  color: #484848;
+  font-size: 100%;
+}
+
+
+h3 {
+  font-size: 1.714em;
+  font-weight: 800;
+  line-height: 1.25em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+	font-family: 'Circular', Roboto, Helvetica Neue, sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: #008489;
+}
+
+
+hr {
+  width: 120px;
+}
+
+
+
+
+#content {
+  height: 100vh;
+  background: linear-gradient(to right, #feb618 0%,#feb618 60%,#00be4c 60%,#00be4c 100%);
+  padding-top: 8%;
+
+
+}
+
+#banner {
+  background: #fff;
+  background: linear-gradient(to right, #fff 0%, #fff 62.5%,#feb618 62.5%, #feb618 100%);
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* padding: 20px; */
+}
