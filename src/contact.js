@@ -1,10 +1,5 @@
-const contact = () => {
-  return `
-  <div class="caption">
-    <h1>Contact Us Now!!!</h1>
-  </div>
+const contact = document.createElement("p");
+contact.classList.add("tab-dis", "tab-dis-about");
+contact.textContent = `Please email us at - restaurant@gmail.com`;
 
-  `
-}
-
-export {contact}
+export { contact };

@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,172 +17,175 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-  color: #484848;
-  /* font-family: 'Circular', Roboto, Helvetica Neue, sans-serif; */
-
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+body {
+  font-family: "Lora", Georgia, serif;
 }
 
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.slider{
+ background: url(img/img_bg_1.jpg) no-repeat center center;
+ background-size: cover;
+ display: table;
+ height: 600px;
+ width: 100%;
+ z-index: 1;
+ overflow-x: hidden;
 }
 
-
-
-/* ----------------- CSS RESET ENDS ----------------------- */
-
-div, nav {
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.slider .slider_inner{
+background: #303030;
+min-height: 600px;
+opacity: 0.8;
+width: 100%;
+/*z-index: 1;*/
+position: absolute;
 }
 
-
-
-h1 {
-  font-size: 2.7em;
-  font-weight: 800;
-  line-height: 1.5em;
-  padding-top: 2px;
-  padding-bottom: 2px;
+.slider .slider_content{
+ display: table-cell;
+ text-align: center;
+ vertical-align: middle;
+ z-index: 2;
+ position: relative;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 16px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: #feb618;
-
-}
-
-a:focus {
-  text-decoration: none;
-}
-
-a:active {
-  color: #feb618;
-}
-
-
-hr {
-  width: 120px;
-}
-
-span {
-  color: #feb618;
-}
-
-
-
-.content {
-  height: 100vh;
-  background: linear-gradient(to right, #feb618 0%,#feb618 60%,#00be4c 60%,#00be4c 100%);
-  padding-top: 8%;
-
-
-}
-
-.banner {
-  background-image: url('food.png');
-  background: linear-gradient(to right, #fff 0%, #fff 62.5%,#feb618 62.5%, #feb618 100%);
-  max-height: 550px;
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.home-tab {
-  padding: 20px 30px;
-  margin-left: 55px;
-  margin-top: 40px;
-  border-left: 4px solid #feb618;
-}
-.about-tab {
-  padding: 20px 30px;
-  margin-left: 55px;
-  margin-top: 40px;
-  border-left: 4px solid #feb618;
-}
-.contact-tab {
-  padding: 20px 30px;
-  margin-left: 55px;
-  margin-top: 40px;
-  border-left: 4px solid #feb618;
-}
-.menu-tab {
-  padding: 20px 30px;
-  margin-left: 55px;
-  margin-top: 40px;
-  border-left: 4px solid #feb618;
-}
-
-.call-to-action {
-  margin-top: 20px;
-  margin-left: 85px;
-  border: 2px solid yellow;
-  width: 300px;
-}
-button {
-  width: 100%;
-  padding: 20px;
-  background: #feb618;
-  border: 1px solid #feb618;
-  border: none;
-  border-radius: 3px;
+.slider .slider_content h1{
+  margin-bottom: 30px;
+  font-size: 55px;
+  line-height: 1.3;
+  font-weight: 400;
+  font-family: "Lora", Georgia, serif;
   color: #fff;
-  font-size: 14px;
-  transition: background 0.5s;
-
-
+  text-transform: uppercase;
 }
 
-button:hover {
-  background: #00be4c;
+.slider .slider_content h4 {
+  color: #fff;
+  font-family: "Lora", Georgia, serif;
+  font-size: 16px;
 }
 
-.left-box {
-  width: 50%;
-  padding: 20px;
+.slider_help {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin: 1em 0.8em;
 }
 
-.img-box {
-  width: 50%;
+.slider_help.type1.type1::after, .slider_help.type1.type1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
 }
-
-img {
+.slider_help.type1.type1::after {
+  bottom: 140px;
+  right: 220px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+}
+.slider_help.type1.type1::before {
+  top: 140px;
+  left: 220px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
+/* .slider_help.type1.type1:hover:after, .slider_help.type1.type1:hover:before {
   width: 100%;
+  height: 100%;
+} */
+
+
+.main {
+  position: relative;
+  min-height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #302939;
+  display: grid;
+  grid-template-areas: "about menu contact . . ." "content content content content content content" "content content content content content content" "content content content content content content";
+  place-items: center;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: min-content;
+}
+
+.main .tab {
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #302939;
+}
+
+.main .tab:hover {
+  cursor: pointer;
+  color: #15B5E2;
+  border: 2px solid #15B5E2;
+  background-color: #fff;
+
+}
+
+.activeState {
+  background-color: #302939 !important;
+  color: #fff !important;
+  border-bottom: 8px solid #fff !important;
+
+}
+
+.main .tab-about {
+  grid-area: about;
+  margin-right: 30px;
+}
+.main .tab-menu {
+  grid-area: menu;
+  margin-right: 30px;
+}
+
+.main .tab-contact {
+  grid-area: contact;
+  margin-right: 30px;
+}
+
+.main .tab-dis {
+  grid-area: content;
+}
+
+.main .tab-dis-about {
+  width: 60%;
+  justify-self: start;
+  margin-left: 3rem;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+.main .tab-dis-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main .tab-dis-menu img {
+  width: 22rem;
+  border: 4px solid #15B5E2;
+}
+
+.main .meal-1 {
+  position: relative;
 }
