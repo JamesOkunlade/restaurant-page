@@ -4,9 +4,9 @@ const food = {
 	item3: document.createElement("img")
 };
 
-food.item1.src = "img/meal1.jpg";
-food.item2.src = "img/meal2.jpg";
-food.item3.src = "img/meal3.jpg";
+food.item1.src = "img/meal1.png";
+food.item2.src = "img/meal1.png";
+food.item3.src = "img/meal1.png";
 
 food.item1.classList.add("meal-1");
 food.item2.classList.add("meal-2");

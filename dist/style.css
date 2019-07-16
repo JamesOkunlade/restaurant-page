@@ -25,22 +25,14 @@ body {
 }
 
 .slider{
- background: url(img/img_bg_1.jpg) no-repeat center center;
- background-size: cover;
- display: table;
- height: 600px;
- width: 100%;
- z-index: 1;
- overflow-x: hidden;
+	height: 100vh;
+  background: linear-gradient(to right, #feb618 0%,#feb618 60%,#00be4c 60%,#00be4c 100%);
+  padding-top: 8%;
+
 }
 
 .slider .slider_inner{
-background: #303030;
-min-height: 600px;
-opacity: 0.8;
-width: 100%;
-/*z-index: 1;*/
-position: absolute;
+
 }
 
 .slider .slider_content{
