@@ -21,19 +21,20 @@ const base = (() => {
   elements.sliderContent.classList.add("slider_content");
   elements.sliderContent.classList.add("slider_help");
   elements.sliderContent.classList.add("type1");
-  elements.sliderContent.innerHTML = `
-		<div class="caption">
-			<h1>Nothing brings people together like Good<span>Food</span</h1>
-		</div>
-
-		<div class="call-to-action">
-			<button type="button" name="button">View Our Menu</button>
-		</div>
-  `;
+  // elements.sliderContent.innerHTML = `
+	// 	<div class="caption">
+	// 		<h1>Nothing brings people together like Good<span>Food</span</h1>
+	// 	</div>
+	//
+	// 	<div class="call-to-action">
+	// 		<button type="button" name="button">View Our Menu</button>
+	// 	</div>
+  // `;
 
 	elements.content.appendChild(elements.header);
   elements.header.appendChild(elements.sliderInner);
   elements.header.appendChild(elements.sliderContent);
+  elements.sliderContent.appendChild(elements.main);
 
 
   /// MAIN

@@ -35,38 +35,38 @@ body {
 
 }
 
-.slider .slider_content{
+/* .slider .slider_content{
  display: table-cell;
  text-align: center;
  vertical-align: middle;
  z-index: 2;
  position: relative;
-}
+} */
 
-.slider .slider_content h1{
+/* .slider .slider_content h1{
   margin-bottom: 30px;
   font-size: 55px;
   line-height: 1.3;
   font-weight: 400;
   font-family: "Lora", Georgia, serif;
-  color: #fff;
-  text-transform: uppercase;
+  /* color: #fff; */
+  /* text-transform: uppercase; */
 }
 
-.slider .slider_content h4 {
+/* .slider .slider_content h4 {
   color: #fff;
   font-family: "Lora", Georgia, serif;
   font-size: 16px;
-}
+} */
 
-.slider_help {
+/* .slider_help {
   position: relative;
   padding: 1em 1.5em;
   border: none;
   background-color: transparent;
   outline: none;
   margin: 1em 0.8em;
-}
+} */
 
 .slider_help.type1.type1::after, .slider_help.type1.type1::before {
   content: "";
@@ -101,16 +101,21 @@ body {
 
 
 .main {
-  position: relative;
-  min-height: 500px;
-  width: 100%;
+	color: blue;
+  width: 80%;
   margin: 0 auto;
-  background-color: #302939;
+	background: linear-gradient(to right, #fff 0%, #fff 62.5%,#feb618 62.5%, #feb618 100%);
+	height: 550px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: grid;
   grid-template-areas: "about menu contact . . ." "content content content content content content" "content content content content content content" "content content content content content content";
   place-items: center;
   grid-template-columns: min-content min-content min-content;
   grid-template-rows: min-content;
+
+
+
+
 }
 
 .main .tab {
@@ -160,7 +165,7 @@ body {
   width: 60%;
   justify-self: start;
   margin-left: 3rem;
-  color: #fff;
+  /* color: #fff; */
   font-size: 1.3rem;
   letter-spacing: 3px;
   line-height: 1.8;
