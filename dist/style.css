@@ -27,7 +27,7 @@ body {
 .slider{
 	height: 100vh;
   background: linear-gradient(to right, #feb618 0%,#feb618 60%,#00be4c 60%,#00be4c 100%);
-  /* padding-top: 8%;		 */
+  padding-top: 8%;
 
 }
 
@@ -83,12 +83,14 @@ body {
 }
 
 .main .tab-dis-about {
-  width: 60%;
+  width: 50%;
   justify-self: start;
   margin-left: 3rem;
-  font-size: 1.3rem;
+  font-size: 2.8rem;
   letter-spacing: 3px;
   line-height: 1.8;
+	border-left: 2px solid #feb618;
+	padding: 10px 30px;;
 }
 
 .main .tab-dis-menu {
