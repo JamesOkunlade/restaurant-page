@@ -32,9 +32,10 @@ const base = (() => {
   // `;
 
 	elements.content.appendChild(elements.header);
+  elements.header.appendChild(elements.main);
   elements.header.appendChild(elements.sliderInner);
   elements.header.appendChild(elements.sliderContent);
-  elements.sliderContent.appendChild(elements.main);
+  // elements.sliderContent.appendChild(elements.main);
 
 
   /// MAIN
@@ -50,7 +51,7 @@ const base = (() => {
 	elements.main.appendChild(elements.about);
 	elements.main.appendChild(elements.menu);
 	elements.main.appendChild(elements.contact);
-	elements.content.appendChild(elements.main);
+	// elements.content.appendChild(elements.main);
 
 
 })();
