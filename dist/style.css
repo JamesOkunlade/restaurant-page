@@ -16,6 +16,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+  color: #484848;
+  /* font-family: 'Circular', Roboto, Helvetica Neue, sans-serif; */
+
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -23,9 +26,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -53,18 +54,12 @@ div, nav {
   box-sizing: border-box;
 }
 
-body {
-  font-weight: 400;
-  line-height: 1.75;
-  color: #484848;
-  font-size: 100%;
-}
 
 
-h3 {
-  font-size: 1.714em;
+h1 {
+  font-size: 2.7em;
   font-weight: 800;
-  line-height: 1.25em;
+  line-height: 1.5em;
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -76,15 +71,18 @@ ul {
 
 ul li {
   list-style-type: none;
+  display: inline-block;
+  padding: 16px;
 }
 
 a {
-	font-family: 'Circular', Roboto, Helvetica Neue, sans-serif;
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #feb618;
+
 }
 
 a:focus {
@@ -92,7 +90,7 @@ a:focus {
 }
 
 a:active {
-  color: #008489;
+  color: #feb618;
 }
 
 
@@ -100,10 +98,13 @@ hr {
   width: 120px;
 }
 
+span {
+  color: #feb618;
+}
 
 
 
-#content {
+.content {
   height: 100vh;
   background: linear-gradient(to right, #feb618 0%,#feb618 60%,#00be4c 60%,#00be4c 100%);
   padding-top: 8%;
@@ -111,12 +112,70 @@ hr {
 
 }
 
-#banner {
-  background: #fff;
+.banner {
+  background-image: url('food.png');
   background: linear-gradient(to right, #fff 0%, #fff 62.5%,#feb618 62.5%, #feb618 100%);
-  height: 500px;
+  max-height: 550px;
+  display: flex;
   width: 80%;
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* padding: 20px; */
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.home-caption {
+  padding: 20px 30px;
+  margin-left: 55px;
+  margin-top: 40px;
+  border-left: 4px solid #feb618;
+}
+.about-caption {
+  padding: 20px 30px;
+  margin-left: 55px;
+  margin-top: 40px;
+  border-left: 4px solid #feb618;
+}
+.home-caption {
+  padding: 20px 30px;
+  margin-left: 55px;
+  margin-top: 40px;
+  border-left: 4px solid #feb618;
+}
+
+.call-to-action {
+  margin-top: 20px;
+  margin-left: 85px;
+  border: 2px solid yellow;
+  width: 300px;
+}
+button {
+  width: 100%;
+  padding: 20px;
+  background: #feb618;
+  border: 1px solid #feb618;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  transition: background 0.5s;
+
+
+}
+
+button:hover {
+  background: #00be4c;
+}
+
+.left-box {
+  width: 50%;
+  padding: 20px;
+}
+
+.img-box {
+  width: 50%;
+}
+
+img {
+  width: 100%;
 }
