@@ -1,11 +1,14 @@
 import { elements } from "./base";
 import base from "./base";
-import { about, contact, menu, notFound} from './pages'
+import {about} from './about.js'
+import {contact} from './contact.js'
+import {menu} from './menu.js'
+import {notFound} from './notfound.js'
 
 
-const tabs = ["home", "about", "contact", "menu", "notFound"]
+const tabs = ["about", "contact", "menu", "notFound"]
 
-elements.main.appendChild(paragraph);
+			// elements.main.appendChild(paragraph);
 
 
 
@@ -40,7 +43,7 @@ const loadContact = () => {
 	activeState("menu");
 };
 
-const loadContact = () => {
+const loadnotFound = () => {
 	elements.main.removeChild(elements.main.lastChild);
 	elements.main.appendChild(contact);
 	activeState("notFound");

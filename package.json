@@ -8,6 +8,9 @@
   },
   "author": "James Okunlade",
   "license": "ISC",
+  "dependencies": {
+    "file-loader": "^4.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
