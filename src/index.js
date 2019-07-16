@@ -1,6 +1,6 @@
 import { elements } from "./base";
 import base from "./base";
-import { home, about, contact, menu, notFound} from './pages'
+import { about, contact, menu, notFound} from './pages'
 
 
 const tabs = ["home", "about", "contact", "menu", "notFound"]

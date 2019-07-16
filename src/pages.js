@@ -1,11 +1,3 @@
-const home = () => {
-  return `
-  <div class="caption">
-    <h1>Nothing brings people together like Good<span>Food</span</h1>
-  </div>
-  `
-}
-
 const about = () => {
   return `
   <div class="caption">
@@ -42,4 +34,4 @@ const notFound = () => {
 }
 
 
-export { home, about, contact, menu, notFound}
+export { about, contact, menu, notFound}

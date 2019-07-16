@@ -17,37 +17,43 @@ const elements = {
 };
 
 const base = (() => {
-	// HEADER
+
 	elements.banner.classList.add("banner");
   elements.leftBox.classList.add("left-box");
   elements.imageBox.classList.add("img-box");
   elements.navigation.classList.add("nav");
-  elements.sliderContent.classList.add("type1");
-  elements.sliderContent.innerHTML = `
-      <h1>Exquisite Dishes</br> From Chef</h1>
-      <h4>Far far away, behind the word mountains, far from the
-        countries Vokalia</br> and Consonantia, there live the blind texts.</h4>
+  elements.home.classList.add("type1");
+  elements.home.innerHTML = `
+      <div class="caption">
+        <h1>Nothing brings people together like Good<span>Food</span</h1>
+      </div>
+
+      <div class="call-to-action">
+        <button type="button" name="button">View Our Menu</button>
+      </div>
   `;
 
-	elements.content.appendChild(elements.header);
-  elements.header.appendChild(elements.sliderInner);
-  elements.header.appendChild(elements.sliderContent);
+	elements.content.appendChild(elements.banner);
+  elements.banner.appendChild(elements.leftBox);
+  elements.banner.appendChild(elements.imageBox);
+  elements.leftBox.appendChild(elements.navigation);
 
 
-  /// MAIN
-	elements.main.classList.add("main");
-	elements.about.classList.add("tab", "tab-about");
+	elements.home.classList.add("home-tab");
+	elements.about.classList.add("tab", "about-tab");
 	elements.about.textContent = "about";
-	elements.menu.classList.add("tab", "tab-menu");
+	elements.menu.classList.add("tab", "menu-tab");
 	elements.menu.textContent = "menu";
-	elements.contact.classList.add("tab", "tab-contact");
+	elements.contact.classList.add("tab", "contact-tab");
 	elements.contact.textContent = "contact";
 
 
-	elements.main.appendChild(elements.about);
-	elements.main.appendChild(elements.menu);
-	elements.main.appendChild(elements.contact);
-	elements.content.appendChild(elements.main);
+	elements.banner.appendChild(elements.home);
+	elements.banner.appendChild(elements.about);
+	elements.banner.appendChild(elements.contact);
+	elements.banner.appendChild(elements.menu);
+	elements.banner.appendChild(elements.notFound);
+	elements.content.appendChild(elements.banner);
 
 
 })();

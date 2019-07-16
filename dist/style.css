@@ -124,19 +124,25 @@ span {
   background-size: auto;
 }
 
-.home-caption {
+.home-tab {
   padding: 20px 30px;
   margin-left: 55px;
   margin-top: 40px;
   border-left: 4px solid #feb618;
 }
-.about-caption {
+.about-tab {
   padding: 20px 30px;
   margin-left: 55px;
   margin-top: 40px;
   border-left: 4px solid #feb618;
 }
-.home-caption {
+.contact-tab {
+  padding: 20px 30px;
+  margin-left: 55px;
+  margin-top: 40px;
+  border-left: 4px solid #feb618;
+}
+.menu-tab {
   padding: 20px 30px;
   margin-left: 55px;
   margin-top: 40px;
