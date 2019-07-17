@@ -2,10 +2,10 @@ import { elements } from "./base";
 import base from "./base";
 
 import { paragraph } from "./about";
-import { gallary } from "./menu.js";
+import { menu } from "./menu.js";
 import { contact } from "./contact.js";
 
-const tabs = ["about", "menu", "contact"];
+const tabs = [ "about", "menu", "contact"];
 elements.main.appendChild(paragraph);
 
 
@@ -25,7 +25,7 @@ const loadAbout = () => {
 
 const loadMenu = () => {
 	elements.main.removeChild(elements.main.lastChild);
-	elements.main.appendChild(gallary);
+	elements.main.appendChild(menu);
 	activeState("menu");
 };
 
