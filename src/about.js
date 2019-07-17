@@ -1,10 +1,5 @@
-const about = () => {
-  return `
-  <div class="caption">
-    <h1>Know more about Us</h1>
-  </div>
-  `
-}
+const paragraph = document.createElement("p");
+paragraph.classList.add("tab-dis", "tab-dis-about");
+paragraph.textContent = `Nothing brings people together like GoodFood.`;
 
-
-export {about}
+export { paragraph };

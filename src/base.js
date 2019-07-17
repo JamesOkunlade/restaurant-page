@@ -1,74 +1,45 @@
 const elements = {
 	content: document.querySelector(".content"),
 
-	banner: document.createElement("div"),
-  leftBox: document.createElement("div"),
-  imageBox: document.createElement("div"),
-  navigation: document.createElement("nav"),
+	header: document.createElement("header"),
+  sliderInner: document.createElement("div"),
+  sliderContent: document.createElement("div"),
 
 
-  home: document.createElement("div"),
+  main: document.createElement("main"),
 	about: document.createElement("div"),
 	menu: document.createElement("div"),
 	contact: document.createElement("div"),
-	notFound: document.createElement("div"),
 
 
 };
 
 const base = (() => {
+	// HEADER
+	elements.header.classList.add("slider");
+  elements.sliderInner.classList.add("slider_inner");
+  elements.sliderContent.classList.add("slider_content");
+  elements.sliderContent.classList.add("slider_help");
+  elements.sliderContent.classList.add("type1");
 
-	elements.banner.classList.add("banner");
-  elements.leftBox.classList.add("left-box");
-  elements.imageBox.classList.add("img-box");
-  elements.navigation.classList.add("nav");
-  elements.home.classList.add("type1");
-  elements.home.innerHTML = `
-      <div class="caption">
-        <h1>Nothing brings people together like Good<span>Food</span</h1>
-      </div>
-
-      <div class="call-to-action">
-        <button type="button" name="button">View Our Menu</button>
-      </div>
-  `;
-	elements.navigation.innerHTML = `
-		<nav class="nav">
-			<ul>
-				<li>Good<span>Food</span></li>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About us</a></li>
-				<li><a href="#">Contact us</a></li>
-			</ul>
-		</nav>
-	`;
-
-	elements.content.appendChild(elements.banner);
-  elements.banner.appendChild(elements.leftBox);
-  elements.banner.appendChild(elements.imageBox);
-  elements.leftBox.appendChild(elements.navigation);
-  elements.leftBox.appendChild(elements.home);
-  elements.leftBox.appendChild(elements.about);
-  elements.leftBox.appendChild(elements.menu);
-  elements.leftBox.appendChild(elements.contact);
-  elements.leftBox.appendChild(elements.notFound);
+	elements.content.appendChild(elements.header);
+  elements.header.appendChild(elements.main);
 
 
-	elements.home.classList.add("home-tab");
-	elements.about.classList.add("tab", "about-tab");
+  /// MAIN
+	elements.main.classList.add("main");
+	elements.main.classList.add("overlay");
+	elements.about.classList.add("tab", "tab-about");
 	elements.about.textContent = "about";
-	elements.menu.classList.add("tab", "menu-tab");
+	elements.menu.classList.add("tab", "tab-menu");
 	elements.menu.textContent = "menu";
-	elements.contact.classList.add("tab", "contact-tab");
+	elements.contact.classList.add("tab", "tab-contact");
 	elements.contact.textContent = "contact";
 
 
-	// elements.banner.appendChild(elements.home);
-	// elements.banner.appendChild(elements.about);
-	// elements.banner.appendChild(elements.contact);
-	// elements.banner.appendChild(elements.menu);
-	// elements.banner.appendChild(elements.notFound);
-	// elements.content.appendChild(elements.banner);
+	elements.main.appendChild(elements.about);
+	elements.main.appendChild(elements.menu);
+	elements.main.appendChild(elements.contact);
 
 
 })();
