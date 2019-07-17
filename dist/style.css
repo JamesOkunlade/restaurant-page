@@ -1,0 +1,122 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  font-family: "Lora", Georgia, serif;
+}
+
+.slider{
+	height: 100vh;
+  background: linear-gradient(to right, #feb618 0%,#feb618 60%,#00be4c 60%,#00be4c 100%);
+  padding-top: 8%;
+
+}
+
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+	background: linear-gradient(to right, #fff 0%, #fff 62.5%,#feb618 62.5%, #feb618 100%);
+	height: 550px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  grid-template-areas: "about menu contact . . ." "content content content content content content" "content content content content content content" "content content content content content content";
+  place-items: center;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: min-content;
+}
+
+.overla {
+	position: relative;
+	background-image: url("food.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+
+}
+
+.main .tab {
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.0rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  color: #feb618;
+	margin-left: 5px;
+
+}
+
+.main .tab:hover {
+  cursor: pointer;
+}
+
+.activeState {
+	border-bottom: 2px solid #feb618;
+}
+
+.main .tab-about {
+  grid-area: about;
+  margin-right: 30px;
+}
+
+.main .tab-menu {
+  grid-area: menu;
+  margin-right: 30px;
+}
+
+.main .tab-contact {
+  grid-area: contact;
+  margin-right: 30px;
+}
+
+.main .tab-dis {
+  grid-area: content;
+}
+
+.main .tab-dis-about {
+  width: 50%;
+  justify-self: start;
+  margin-left: 3rem;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  line-height: 1.8;
+	border-left: 2px solid #feb618;
+	padding: 10px 30px;;
+}
+
+.main .tab-dis-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main .tab-dis-menu img {
+  width: 24rem;
+}
+
+img:hover {
+	opacity: 0.8;
+}
+
+.main .meal-1 {
+  position: relative;
+}
