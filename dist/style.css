@@ -45,6 +45,15 @@ body {
   grid-template-rows: min-content;
 }
 
+.overla {
+	position: relative;
+	background-image: url("food.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+
+}
+
 .main .tab {
   font-family: "Lora", Georgia, serif;
   font-size: 1.0rem;

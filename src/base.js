@@ -24,10 +24,11 @@ const base = (() => {
 
 	elements.content.appendChild(elements.header);
   elements.header.appendChild(elements.main);
-  
+
 
   /// MAIN
 	elements.main.classList.add("main");
+	elements.main.classList.add("overlay");
 	elements.about.classList.add("tab", "tab-about");
 	elements.about.textContent = "about";
 	elements.menu.classList.add("tab", "tab-menu");
